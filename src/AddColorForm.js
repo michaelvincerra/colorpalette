@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 // import '../../stylesheets/AddColorForm.scss'
-
 /* global    */
 /* Learn flow types in place of Prop.types */
 
