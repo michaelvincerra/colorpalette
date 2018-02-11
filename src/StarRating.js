@@ -1,5 +1,4 @@
-// import PropTypes from 'prop-types'
-import { Component } from 'react'
+import React, { Component } from 'react'
 import Star from './Star'
 
 // const StarRating = ({starsSelected = 0, totalStars = 5, onRate = f => f}) =>

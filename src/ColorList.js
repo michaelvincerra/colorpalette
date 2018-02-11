@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types' // TODO: REMOVE THIS?
 import Color from './Color'
-import { Component } from 'react'
-import '../../stylesheets/ColorList.scss'
+import React, { Component } from 'react'
+// import '../stylesheets/ColorList.scss'
 
 // const ColorList = ({ colors = [], onRate = f => f, onRemove = f => f }) =>
 //   <div className='color-list'>

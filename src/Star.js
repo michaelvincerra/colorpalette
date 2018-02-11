@@ -1,6 +1,5 @@
-// import PropTypes from 'prop-types'
-import '../../stylesheets/Star.scss'
-import { Component } from '../../../../../../Library/Caches/typescript/2.6/node_modules/@types/react'
+import React, { Component } from 'react'
+// import '../stylesheets/Star.scss'
 
 // const Star = ({ selected = false, onClick = f => f }) =>
 //   <div className={(selected) ? 'star selected' : 'star'}
