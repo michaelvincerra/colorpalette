@@ -12,21 +12,31 @@ export default class AddColorForm extends Component {
       color: '#000000'
     }
     this.submit = this.submit.bind(this)
+    this.setColor = this.setColor.bind(this)
+    this.setTitle = this.setTitle.bind(this)
   }
 
   submit (e) {
     e.preventDefault()
-    this.props.onNewColor(this.state.title.value, this.state.color.value) // To ensure that data flows properly (two-way data binding)
-    this.setState({title: '', color: '#000000'})
+    // this.props.onNewColor(this.state.title, this.state.color)
+    // To ensure that data flows properly (two-way data binding)
+    this.setState({ title: '', color: '#000000' })
   }
+  setColor (e) {
+    this.setState({ color: e.currentTarget.value })
+  }
+
+  setTitle (e) {
+    this.setState({ title: e.target.value })
+  }
+
   render () {
     return (
       <form className='add-color' onSubmit={this.submit} >
-        <input ref={input => ({title: input})}
-          type='text'
+        <input type='text' value={this.props.title} setTitle={this.setTitle()}
           placeholder='color title...' required />
-        <input ref={input => ({color: input})}
-          type='color' required />
+        <input type='text' value={this.props.color} setColor={this.setColor()}
+          placeholder='hexidecimal value' required />
         <button > ADD </button>
       </form>
     )
