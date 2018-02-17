@@ -33,9 +33,9 @@ export default class AddColorForm extends Component {
   render () {
     return (
       <form className='add-color' onSubmit={this.submit} >
-        <input type='text' value={this.props.title} setTitle={this.props.setTitle()}
+        <input type='text' value={this.props.title} setTitle={this.setTitle()}
           placeholder='color title...' required />
-        <input type='text' value={this.props.color} setColor={this.props.setColor()}
+        <input type='text' value={this.props.color} setColor={this.setColor()}
           placeholder='hexidecimal value' required />
         <button > ADD </button>
       </form>
