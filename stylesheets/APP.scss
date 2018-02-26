@@ -1,4 +1,14 @@
 @import "globals";
+@import "AddColorForm"; 
+@import "Color"; 
+@import "ColorList"; 
+@import "Star"; 
+
+/* 
+We import all scss here so that they're all processed.  
+*/ 
+
+
 
 html, body, div#react-container {
   min-height: 100%;

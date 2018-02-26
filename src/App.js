@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import { v4 } from 'uuid'
 import AddColorForm from './AddColorForm'
 import ColorList from './ColorList'
-// import '../../stylesheets/APP.scss'
+import './css/APP.css'
+
+/* "DATA DOWN: State is passed from the App.js component
+DOWN to child components as props..."  */
 
 class App extends Component {
   constructor (props) {
@@ -49,14 +52,13 @@ class App extends Component {
   }
 
   render () {
-    const { addColor, rateColor, removeColor } = this
-    const { colors } = this.state
     return (
       <div className='app'>
-        <AddColorForm onNewColor={addColor} />
-        <ColorList colors={colors}
-          onRate={rateColor}
-          onRemove={removeColor} />
+        {/* AddColorForm is instantiated; onNewColor is a prop, and it's the first time is connected to component */}
+        <AddColorForm onNewColor={this.addColor} />
+        <ColorList colors={this.state.colors}
+          onRate={this.rateColor}
+          onRemove={this.removeColor} />
       </div>
     )
   }
