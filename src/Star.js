@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-// import '../../stylesheets/Star.scss'
-import './App.css'
 
 export default class Star extends Component {
   render () {

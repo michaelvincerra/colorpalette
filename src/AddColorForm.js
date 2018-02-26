@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import '../../stylesheets/AddColorForm.scss'
-// import './App.css'
 
 /* global    */
 /* Learn flow types in place of Prop.types
@@ -42,7 +40,7 @@ export default class AddColorForm extends Component {
       <form className='add-color' onSubmit={this.submit} >
         <input type='text' value={this.state.title} onChange={this.setTitle}
           placeholder='color title...' required />
-        <input type='text' value={this.state.color} onChange={this.setColor}
+        <input type='color' value={this.state.color} onChange={this.setColor}
           placeholder='hexidecimal value' required />
         <button > ADD </button>
       </form>

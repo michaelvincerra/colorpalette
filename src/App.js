@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { v4 } from 'uuid'
 import AddColorForm from './AddColorForm'
 import ColorList from './ColorList'
-// import '../../stylesheets/APP.scss'
-import './App.css'
+import './css/APP.css'
 
 /* "DATA DOWN: State is passed from the App.js component
 DOWN to child components as props..."  */

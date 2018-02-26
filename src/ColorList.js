@@ -1,8 +1,6 @@
 // import PropTypes from 'prop-types' // TODO: REMOVE THIS?
 import Color from './Color'
 import React, { Component } from 'react'
-// import '../../stylesheets/ColorList.scss'
-import './App.css'
 
 export default class ColorList extends Component {
   render () {
