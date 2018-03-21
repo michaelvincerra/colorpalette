@@ -11,7 +11,8 @@ export default class Color extends Component {
         <div className='color'
           style={{ backgroundColor: this.props.color }} />
         <div>
-          <StarRating starsSelected={this.props.rating} onRate={this.props.onRate} />
+          <StarRating rating={this.props.rating} onRate={this.props.onRate}
+            totalStars={this.props.totalStars} />
         </div>
       </section>
     )

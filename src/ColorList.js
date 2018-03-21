@@ -12,7 +12,9 @@ export default class ColorList extends Component {
             <Color key={color.id}
               {...color}
               onRate={(rating) => this.props.onRate(color.id, rating)}
-              onRemove={() => this.props.onRemove(color.id)} />
+              onRemove={() => this.props.onRemove(color.id)}
+              totalStars={5}
+            />
           )
         }
       </div>
